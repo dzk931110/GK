@@ -1,0 +1,15 @@
+//
+//  GK.pch
+//  GuoKe
+//
+//  Created by mac on 15/9/25.
+//  Copyright (c) 2015年 dzk. All rights reserved.
+//
+
+#ifndef GuoKe_GK_pch
+#define GuoKe_GK_pch
+
+#import "Common.h"
+#import "UIViewExt.h"
+
+#endif
