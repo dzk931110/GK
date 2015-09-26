@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>52D427AB-E32A-4A60-81FC-64E99144A8E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GuoKe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F5E10F5E47998793BA7696CBE0A8F48BA3385C9</key>
+		<string>https://github.com/dzk931110/GK.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GuoKe/GuoKe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F5E10F5E47998793BA7696CBE0A8F48BA3385C9</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dzk931110/GK.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F5E10F5E47998793BA7696CBE0A8F48BA3385C9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F5E10F5E47998793BA7696CBE0A8F48BA3385C9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GK-Test</string>
+		</dict>
+	</array>
+</dict>
+</plist>

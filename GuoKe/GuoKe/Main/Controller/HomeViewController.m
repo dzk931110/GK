@@ -54,7 +54,7 @@ static NSString * const reuseIdentifier = @"TLCollectionWaterFallCell";
     self.title = @"果壳精选";
     self.dataList = [NSMutableArray array];
     
-    CGFloat width = ([UIScreen mainScreen].bounds.size.width - 2*kMargin)/3.f;
+    CGFloat width = ([UIScreen mainScreen].bounds.size.width - 2*kMargin)/2.f;
     for (NSUInteger idx = 0; idx < 100; idx ++) {
         CGFloat height = 100 + (arc4random() % 100);
         NSValue *value = [NSValue valueWithCGSize:CGSizeMake(width, height)];
