@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "ResultModel.h"
+#import "MJRefresh.h"
+
+#define times_news @"handpick/article.json"
 
 @interface HomeViewController : BaseViewController
+
+
+
+
 
 @end
