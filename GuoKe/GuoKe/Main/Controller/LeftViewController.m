@@ -31,8 +31,8 @@ static NSString *identify = @"CellId";
 }
 //数据读取
 - (void)_loadData{
-    _rowNameArray = @[@"首页",@"我的收藏",@"设置",@"请吐槽",@"来个好评吧！"];
-//    _rowImageArray = @[];
+    _rowNameArray = @[@"首页",@"我的收藏",@"设置",@"请吐槽"];
+    _rowImageArray = @[@"01.png",@"02.png",@"03.png",@"04.png"];
     
 }
 //初始化视图
@@ -63,10 +63,15 @@ static NSString *identify = @"CellId";
     }
     cell.textLabel.text = [NSString stringWithFormat:@"       %@",_rowNameArray[indexPath.row]];
     cell.textLabel.textColor = [UIColor whiteColor];
-//    cell.imageView.image = [UIImage imageNamed:@""];
     cell.selectionStyle = UITableViewCellSelectionStyleGray;
     cell.backgroundColor = [UIColor clearColor];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    cell.imageView.image = [UIImage imageNamed:_rowImageArray[indexPath.row]];
+    for (int index = 0; index < _rowImageArray.count; index ++) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 8, 30, 30)];
+        imageView.image = [UIImage imageNamed:_rowImageArray[indexPath.row]];
+        [cell.contentView addSubview:imageView];
+    }
     
     return cell;
 }
@@ -74,6 +79,7 @@ static NSString *identify = @"CellId";
     return 50;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (indexPath.row == 0)     { //首页
         HomeViewController *home = [[HomeViewController alloc] init];
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:home];
@@ -98,10 +104,7 @@ static NSString *identify = @"CellId";
         
         [self.mm_drawerController setCenterViewController:nav withCloseAnimation:YES completion:nil];
         
-    }else if (indexPath.row ==4){ //来个好评吧
-        
     }
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

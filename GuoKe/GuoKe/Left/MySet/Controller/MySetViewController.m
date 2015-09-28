@@ -68,6 +68,9 @@
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(320, 5, 40, 30)];
             label.text = @"0.0M";
             [cell.contentView addSubview:label];
+            
+            NSString *homePath = NSHomeDirectory();
+            NSLog(@"%@",homePath);
         }
     }else if (indexPath.section == 3 && indexPath.row == 0){
         cell.textLabel.text = @"关于我们";

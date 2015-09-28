@@ -27,6 +27,23 @@
 		0465A7351BB5E48C002A8F91 /* MySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465A7341BB5E48C002A8F91 /* MySetViewController.m */; };
 		0465A7381BB5E54D002A8F91 /* MyStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465A7371BB5E54D002A8F91 /* MyStoreViewController.m */; };
 		0465A73C1BB5F52C002A8F91 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0465A73B1BB5F52C002A8F91 /* UIViewExt.m */; };
+		04FD92C61BB8E14E004E5F77 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92B31BB8E14E004E5F77 /* comment.png */; };
+		04FD92C71BB8E14E004E5F77 /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92B41BB8E14E004E5F77 /* show.png */; };
+		04FD92C81BB8E14E004E5F77 /* srcImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92B51BB8E14E004E5F77 /* srcImage.png */; };
+		04FD92C91BB8E14E004E5F77 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92B61BB8E14E004E5F77 /* time.png */; };
+		04FD92CA1BB8E14E004E5F77 /* 写字_看图王.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92B71BB8E14E004E5F77 /* 写字_看图王.png */; };
+		04FD92CB1BB8E14E004E5F77 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92B91BB8E14E004E5F77 /* 01.png */; };
+		04FD92CC1BB8E14E004E5F77 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92BA1BB8E14E004E5F77 /* 02.png */; };
+		04FD92CD1BB8E14E004E5F77 /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92BB1BB8E14E004E5F77 /* 03.png */; };
+		04FD92CE1BB8E14E004E5F77 /* 04.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92BC1BB8E14E004E5F77 /* 04.png */; };
+		04FD92CF1BB8E14E004E5F77 /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92BD1BB8E14E004E5F77 /* 0.png */; };
+		04FD92D01BB8E14E004E5F77 /* 黑色爱心_看图王(1).png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92BE1BB8E14E004E5F77 /* 黑色爱心_看图王(1).png */; };
+		04FD92D11BB8E14E004E5F77 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92C01BB8E14E004E5F77 /* 11.png */; };
+		04FD92D21BB8E14E004E5F77 /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92C11BB8E14E004E5F77 /* 22.png */; };
+		04FD92D31BB8E14E004E5F77 /* 绿色时钟.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92C21BB8E14E004E5F77 /* 绿色时钟.png */; };
+		04FD92D41BB8E14E004E5F77 /* 绿色眼睛_看图王.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92C31BB8E14E004E5F77 /* 绿色眼睛_看图王.png */; };
+		04FD92D51BB8E14E004E5F77 /* 转发_看图王.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92C41BB8E14E004E5F77 /* 转发_看图王.png */; };
+		04FD92D61BB8E14E004E5F77 /* 05.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FD92C51BB8E14E004E5F77 /* 05.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +98,23 @@
 		0465A7371BB5E54D002A8F91 /* MyStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoreViewController.m; sourceTree = "<group>"; };
 		0465A73A1BB5F52C002A8F91 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		0465A73B1BB5F52C002A8F91 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		04FD92B31BB8E14E004E5F77 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		04FD92B41BB8E14E004E5F77 /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
+		04FD92B51BB8E14E004E5F77 /* srcImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = srcImage.png; sourceTree = "<group>"; };
+		04FD92B61BB8E14E004E5F77 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		04FD92B71BB8E14E004E5F77 /* 写字_看图王.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "写字_看图王.png"; sourceTree = "<group>"; };
+		04FD92B91BB8E14E004E5F77 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		04FD92BA1BB8E14E004E5F77 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		04FD92BB1BB8E14E004E5F77 /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+		04FD92BC1BB8E14E004E5F77 /* 04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 04.png; sourceTree = "<group>"; };
+		04FD92BD1BB8E14E004E5F77 /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		04FD92BE1BB8E14E004E5F77 /* 黑色爱心_看图王(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "黑色爱心_看图王(1).png"; sourceTree = "<group>"; };
+		04FD92C01BB8E14E004E5F77 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 11.png; path = "../收藏/11.png"; sourceTree = "<group>"; };
+		04FD92C11BB8E14E004E5F77 /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 22.png; path = "../收藏/22.png"; sourceTree = "<group>"; };
+		04FD92C21BB8E14E004E5F77 /* 绿色时钟.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色时钟.png"; sourceTree = "<group>"; };
+		04FD92C31BB8E14E004E5F77 /* 绿色眼睛_看图王.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "绿色眼睛_看图王.png"; sourceTree = "<group>"; };
+		04FD92C41BB8E14E004E5F77 /* 转发_看图王.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "转发_看图王.png"; sourceTree = "<group>"; };
+		04FD92C51BB8E14E004E5F77 /* 05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05.png; path = ../05.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +164,7 @@
 				0465A71B1BB5E14B002A8F91 /* Left */,
 				0465A6D81BB4BB13002A8F91 /* Main */,
 				0465A6BF1BB4BAA8002A8F91 /* Images.xcassets */,
+				04FD92B21BB8E14E004E5F77 /* 新建文件夹 */,
 				0465A6C11BB4BAA8002A8F91 /* LaunchScreen.xib */,
 				0465A6B21BB4BAA8002A8F91 /* Supporting Files */,
 			);
@@ -243,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				0465A71C1BB5E14B002A8F91 /* MyComment */,
-				0465A7201BB5E14B002A8F91 /* MyRank */,
 				0465A7241BB5E14B002A8F91 /* MySet */,
 				0465A7281BB5E14B002A8F91 /* MyStore */,
 			);
@@ -277,37 +311,6 @@
 			sourceTree = "<group>";
 		};
 		0465A71F1BB5E14B002A8F91 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		0465A7201BB5E14B002A8F91 /* MyRank */ = {
-			isa = PBXGroup;
-			children = (
-				0465A7211BB5E14B002A8F91 /* Controller */,
-				0465A7221BB5E14B002A8F91 /* Model */,
-				0465A7231BB5E14B002A8F91 /* View */,
-			);
-			path = MyRank;
-			sourceTree = "<group>";
-		};
-		0465A7211BB5E14B002A8F91 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		0465A7221BB5E14B002A8F91 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0465A7231BB5E14B002A8F91 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -387,6 +390,38 @@
 				0465A73B1BB5F52C002A8F91 /* UIViewExt.m */,
 			);
 			name = tools;
+			sourceTree = "<group>";
+		};
+		04FD92B21BB8E14E004E5F77 /* 新建文件夹 */ = {
+			isa = PBXGroup;
+			children = (
+				04FD92B31BB8E14E004E5F77 /* comment.png */,
+				04FD92B41BB8E14E004E5F77 /* show.png */,
+				04FD92B51BB8E14E004E5F77 /* srcImage.png */,
+				04FD92B61BB8E14E004E5F77 /* time.png */,
+				04FD92B71BB8E14E004E5F77 /* 写字_看图王.png */,
+				04FD92B81BB8E14E004E5F77 /* 归档 */,
+				04FD92C21BB8E14E004E5F77 /* 绿色时钟.png */,
+				04FD92C31BB8E14E004E5F77 /* 绿色眼睛_看图王.png */,
+				04FD92C41BB8E14E004E5F77 /* 转发_看图王.png */,
+			);
+			path = "新建文件夹";
+			sourceTree = "<group>";
+		};
+		04FD92B81BB8E14E004E5F77 /* 归档 */ = {
+			isa = PBXGroup;
+			children = (
+				04FD92BD1BB8E14E004E5F77 /* 0.png */,
+				04FD92B91BB8E14E004E5F77 /* 01.png */,
+				04FD92BA1BB8E14E004E5F77 /* 02.png */,
+				04FD92BB1BB8E14E004E5F77 /* 03.png */,
+				04FD92BC1BB8E14E004E5F77 /* 04.png */,
+				04FD92C51BB8E14E004E5F77 /* 05.png */,
+				04FD92C01BB8E14E004E5F77 /* 11.png */,
+				04FD92C11BB8E14E004E5F77 /* 22.png */,
+				04FD92BE1BB8E14E004E5F77 /* 黑色爱心_看图王(1).png */,
+			);
+			path = "归档";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,9 +504,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FD92D11BB8E14E004E5F77 /* 11.png in Resources */,
+				04FD92CE1BB8E14E004E5F77 /* 04.png in Resources */,
+				04FD92D41BB8E14E004E5F77 /* 绿色眼睛_看图王.png in Resources */,
+				04FD92CD1BB8E14E004E5F77 /* 03.png in Resources */,
+				04FD92CB1BB8E14E004E5F77 /* 01.png in Resources */,
+				04FD92CA1BB8E14E004E5F77 /* 写字_看图王.png in Resources */,
+				04FD92D31BB8E14E004E5F77 /* 绿色时钟.png in Resources */,
+				04FD92D51BB8E14E004E5F77 /* 转发_看图王.png in Resources */,
+				04FD92D61BB8E14E004E5F77 /* 05.png in Resources */,
+				04FD92CC1BB8E14E004E5F77 /* 02.png in Resources */,
 				0465A6C31BB4BAA8002A8F91 /* LaunchScreen.xib in Resources */,
+				04FD92D01BB8E14E004E5F77 /* 黑色爱心_看图王(1).png in Resources */,
+				04FD92C71BB8E14E004E5F77 /* show.png in Resources */,
+				04FD92C61BB8E14E004E5F77 /* comment.png in Resources */,
 				0465A70B1BB5B716002A8F91 /* GKCollectionViewCell.xib in Resources */,
+				04FD92C81BB8E14E004E5F77 /* srcImage.png in Resources */,
+				04FD92C91BB8E14E004E5F77 /* time.png in Resources */,
+				04FD92CF1BB8E14E004E5F77 /* 0.png in Resources */,
 				0465A6C01BB4BAA8002A8F91 /* Images.xcassets in Resources */,
+				04FD92D21BB8E14E004E5F77 /* 22.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +749,7 @@
 				0465A6D41BB4BAA8002A8F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0465A6D51BB4BAA8002A8F91 /* Build configuration list for PBXNativeTarget "GuoKeTests" */ = {
 			isa = XCConfigurationList;
@@ -705,6 +758,7 @@
 				0465A6D71BB4BAA8002A8F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

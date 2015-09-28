@@ -26,12 +26,23 @@
 }
 //导航栏左边按钮
 - (void)createNavButton{
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"   left" style:UIBarButtonItemStylePlain target:self action:@selector(buttonAction:)];
+
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [button setImage:[UIImage imageNamed:@"0.png"] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    self.navigationItem.leftBarButtonItem = buttonItem;
 }
 - (void)buttonAction:(UIButton *)button{
     MMDrawerController *mmDraw = self.mm_drawerController;
-    //关闭动画，不然会有卡顿
-    [mmDraw openDrawerSide:MMDrawerSideLeft animated:NO completion:nil];
+    button.selected = !button.selected;
+    
+    if (button.selected) {
+        [mmDraw openDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
+    }else {
+        [mmDraw closeDrawerAnimated:YES completion:nil];
+    }
 }
 
 /*
