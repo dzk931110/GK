@@ -20,6 +20,8 @@
 @property (nonatomic , copy) NSString *source_name;
 @property (nonatomic , copy) NSString *source;
 @property (nonatomic , copy) NSString *link_v2;
+@property (nonatomic , copy) NSString *link;
+@property (nonatomic , copy) NSString *idStr;
 
 
 @end

@@ -7,7 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "DetailViewController.h"
 
-@interface MyStoreViewController : BaseViewController
+#define collectCancal @"qwertyui"
+
+@interface MyStoreViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
+
 
 @end

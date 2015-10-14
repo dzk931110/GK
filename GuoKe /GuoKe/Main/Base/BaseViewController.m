@@ -56,6 +56,7 @@
         HUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     }
     [HUD show:YES];
+    //显示的时候，下层视图不能点击
     HUD.dimBackground = YES;
     HUD.labelText = @"Loading..";
 
@@ -69,10 +70,6 @@
     HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = @"加载完成";
-    [HUD hide:YES afterDelay:1.5];
+    [HUD hide:YES afterDelay:.8];
 }
-
-
-
-
 @end

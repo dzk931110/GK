@@ -8,7 +8,7 @@
 
 #import "MyCommentViewController.h"
 
-@interface MyCommentViewController ()
+@interface MyCommentViewController () <UITextViewDelegate>
 {
     UILabel *_emailLabel;
     UITextView *_textView1;
@@ -33,15 +33,18 @@
     _emailLabel.text = @"联系邮箱";
     _emailLabel.textColor = [UIColor blackColor];
     
-    _textView1 = [[UITextView alloc] initWithFrame:CGRectMake(40, _emailLabel.bottom+5, 300, 50)];
+    _textView1 = [[UITextView alloc] initWithFrame:CGRectMake(40, _emailLabel.bottom+5, kScreenWidth-50-30, 50)];
     _textView1.backgroundColor = [UIColor whiteColor];
     
     _adviceLabel = [[UILabel alloc] initWithFrame:CGRectMake(40, _textView1.bottom+5, 100, 30)];
     _adviceLabel.text = @"您的建议";
     _adviceLabel.textColor = [UIColor blackColor];
     
-    _textView2 = [[UITextView alloc] initWithFrame:CGRectMake(40, _adviceLabel.bottom+5, 300, 250)];
+    _textView2 = [[UITextView alloc] initWithFrame:CGRectMake(40, _adviceLabel.bottom+5, kScreenWidth-50-30, 250)];
     _textView2.backgroundColor = [UIColor whiteColor];
+    
+    _textView1.delegate = self;
+    _textView2.delegate = self;
     
     [self.view addSubview:_emailLabel];
     [self.view addSubview:_adviceLabel];
@@ -61,6 +64,7 @@
         UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"请填写意见" message:@"欢迎填写意见" delegate:self cancelButtonTitle:@"好吧" otherButtonTitles:nil, nil];
         [alterView show];
     }
+    
     [_textView1 resignFirstResponder];
     [_textView2 resignFirstResponder];
 }

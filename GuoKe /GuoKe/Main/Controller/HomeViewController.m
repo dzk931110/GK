@@ -10,9 +10,7 @@
 #import "GKCollectionViewFlowLayout.h"
 #import "GKCollectionViewCell.h"
 #import "ApplyInternet.h"
-#import "DetileViewController.h"
-
-
+#import "DetailViewController.h"
 
 static NSString * const reuseIdentifier = @"fcell";
 
@@ -45,9 +43,9 @@ static NSString * const reuseIdentifier = @"fcell";
         _collectionView.backgroundColor = [UIColor colorWithWhite:0.96 alpha:1];
         
         _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
-        
         
 //        注册
         UINib *nib = [UINib nibWithNibName:@"GKCollectionViewCell" bundle:[NSBundle mainBundle]];
@@ -86,27 +84,27 @@ static NSString * const reuseIdentifier = @"fcell";
     _data = [[NSMutableArray alloc] init];
     
     [self.view addSubview:self.collectionView];
-    
-     [self _loadDatas];
-    
-//    [self showHUD];
-    
-   }
 
+     [self _loadDatas];
+}
 #pragma mark - request
 - (void)_loadDatas
 {
-
-
+    [self showHUD];
+    
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
-
+    [params setObject:@"by_since" forKey:@"retrieve_type"];//5
+    [params setObject:@"before" forKey:@"orientation"];//1
+    [params setObject:@"all" forKey:@"category"];//4
+    [params setObject:@"1" forKey:@"ad"];//2
     [params setObject:[NSString stringWithFormat:@"%.0f",time] forKey:@"since"];
     
     [ApplyInternet requestInternet:times_news
                         HTTPMethod:@"GET"
                             params:params
                   completionHandle:^(id result) {
+                      
                       
                       NSArray *array = [result objectForKey:@"result"];
                       
@@ -117,14 +115,13 @@ static NSString * const reuseIdentifier = @"fcell";
                           frame.model = _resultModel;
                           [_dataList addObject:_resultModel];
                           [_data addObject:frame];
+                          
                       }
-                      
-//                      [self completeHUD];
-                      
-//                      [self hideHUD];
 
 //                      更新UI 在主线程中
                       dispatch_async(dispatch_get_main_queue(), ^{
+                          [self completeHUD];
+//                          [self hideHUD];
                            [_collectionView reloadData];
                       });
                       
@@ -132,6 +129,7 @@ static NSString * const reuseIdentifier = @"fcell";
                       NSLog(@"错误 : %@",error);
 
                   }];
+
     
 }
 
@@ -139,7 +137,10 @@ static NSString * const reuseIdentifier = @"fcell";
 - (void)_loadNewDatas
 {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    
+    [params setObject:@"by_since" forKey:@"retrieve_type"];//5
+    [params setObject:@"before" forKey:@"orientation"];//1
+    [params setObject:@"all" forKey:@"category"];//4
+    [params setObject:@"1" forKey:@"ad"];//2
     NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
     
     [params setObject:[NSString stringWithFormat:@"%.0f",time] forKey:@"since"];//3
@@ -182,7 +183,10 @@ static NSString * const reuseIdentifier = @"fcell";
 - (void)_loadMoreDatas
 {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    
+    [params setObject:@"by_since" forKey:@"retrieve_type"];//5
+    [params setObject:@"before" forKey:@"orientation"];//1
+    [params setObject:@"all" forKey:@"category"];//4
+    [params setObject:@"1" forKey:@"ad"];//2
     ResultModel *model = [_dataList lastObject];
     
     NSNumber *data = model.date_picked;
@@ -223,18 +227,12 @@ static NSString * const reuseIdentifier = @"fcell";
                   }];
 
 }
-
-
-
-
-
 #pragma mark UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     [_collectionView.collectionViewLayout invalidateLayout];
     return _dataList.count;
 }
-
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -259,19 +257,15 @@ static NSString * const reuseIdentifier = @"fcell";
     
 }
 
-
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    DetileViewController *detaleController = [[DetileViewController alloc] init];
+    DetailViewController *detailController = [[DetailViewController alloc] init];
     
-    detaleController.index = indexPath.row;
-
+    detailController.index = indexPath.row;
+    detailController.detaleArray = self.dataList;
     
-    detaleController.detaleArray = self.dataList;
-    
-    [self.navigationController pushViewController:detaleController animated:NO];
+    [self.navigationController pushViewController:detailController animated:NO];
     
 }
-
 
 @end

@@ -34,7 +34,7 @@ static NSUInteger const kColCount = 2;
     self.colArr = [NSMutableArray arrayWithCapacity:kColCount];
     self.delegate = (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
     
-    //_colArr 用来存放相邻的三个高度
+    //_colArr 用来存放相邻的两个高度
     CGFloat top = .0f;
     for (NSUInteger idx = 0; idx < kColCount; idx ++) {
         [_colArr addObject:[NSNumber numberWithFloat:top]];
@@ -61,7 +61,7 @@ static NSUInteger const kColCount = 2;
         itemSize = [self.delegate collectionView:self.collectionView layout:self sizeForItemAtIndexPath:indexPath];
     }
     
-    // 遍历相邻三个高度获取最小高度
+    // 遍历相邻两个高度获取最小高度
     NSUInteger col = 0;
     CGFloat shortHeight = [[_colArr firstObject] floatValue];
     for (NSUInteger idx = 0; idx < _colArr.count; idx ++) {

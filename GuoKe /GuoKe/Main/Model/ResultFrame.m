@@ -57,8 +57,8 @@
     _labelViewFrame = CGRectMake(0, imageHeight + labelHeight, widths, 20);
     _soureImageFrame = CGRectMake(5, 2, 15, 15);
     _soureLabelFrame = CGRectMake(20, 0, 80, 20);
-    _timeImageFrame = CGRectMake(100, 2, 15, 15);
-    _timeLabelFrame = CGRectMake(115, 0, widths - 30 - 80, 20);
+    _timeImageFrame = CGRectMake(80, 2, 15, 15);
+    _timeLabelFrame = CGRectMake(95, 0, widths - 30 , 20);
         
     _heights = imageHeight+labelHeight+20;
 }

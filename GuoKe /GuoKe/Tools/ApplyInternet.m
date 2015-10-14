@@ -15,10 +15,10 @@
 //params 参数
 + (void)requestInternet:(NSString *)urlString HTTPMethod:(NSString *)method params:(NSMutableDictionary *)params completionHandle:(void (^)(id))completionblock errorHandle:(void (^)(NSError *))errorblock;
 {
-    [params setObject:@"by_since" forKey:@"retrieve_type"];//5
-    [params setObject:@"before" forKey:@"orientation"];//1
-    [params setObject:@"all" forKey:@"category"];//4
-    [params setObject:@"1" forKey:@"ad"];//2
+//    [params setObject:@"by_since" forKey:@"retrieve_type"];//5
+//    [params setObject:@"before" forKey:@"orientation"];//1
+//    [params setObject:@"all" forKey:@"category"];//4
+//    [params setObject:@"1" forKey:@"ad"];//2
     
 //    拼接URL
     NSString *requestString = [BaseUrl stringByAppendingString:urlString];
@@ -108,10 +108,7 @@
             
             //把文件数据追加到formData的末尾
             [formData appendPartWithFileData:data name:key fileName:key mimeType:@"image/jpeg"];
-            
-            
         }
-        
         
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
@@ -123,9 +120,5 @@
     }];
     
 }
-
-
-
-
 
 @end
