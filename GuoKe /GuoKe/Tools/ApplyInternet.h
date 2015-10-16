@@ -14,7 +14,7 @@
 
 + (void)requestInternet:(NSString *)urlString HTTPMethod:(NSString *)method params:(NSMutableDictionary *)params completionHandle:(void(^)(id result))completionblock errorHandle:(void(^)(NSError *error))errorblock;
 
-//带图片的微博发送
+//带图片发送
 //params:普通参数 datas：和文件上传相关的参数 
 +(void)AFrequestData:(NSString *)urlString HTTPMethod:(NSString *)method params:(NSMutableDictionary *)params data:(NSMutableDictionary *)datas completionHandle:(void (^)(id))completionblock errorHandle:(void (^)(NSError *))errorblock;
 @end

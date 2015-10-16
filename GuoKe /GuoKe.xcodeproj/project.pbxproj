@@ -392,7 +392,6 @@
 		0465A6B11BB4BAA8002A8F91 /* GuoKe */ = {
 			isa = PBXGroup;
 			children = (
-				0465A7131BB5C6BF002A8F91 /* GK.pch */,
 				0465A6B61BB4BAA8002A8F91 /* AppDelegate.h */,
 				0465A6B71BB4BAA8002A8F91 /* AppDelegate.m */,
 				0465A6DD1BB4BB1A002A8F91 /* Tools */,
@@ -413,6 +412,7 @@
 		0465A6B21BB4BAA8002A8F91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0465A7131BB5C6BF002A8F91 /* GK.pch */,
 				0465A6B31BB4BAA8002A8F91 /* Info.plist */,
 				0465A6B41BB4BAA8002A8F91 /* main.m */,
 			);
